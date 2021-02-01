@@ -1,0 +1,13 @@
+[package]
+name = "people-log"
+version = "0.1.0"
+authors = ["Christophe Néraud <christophe.neraud@grenoble-inp.org>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+qt_core = "0.5.0"
+qt_gui = "0.5.0"
+qt_widgets = "0.5.0"
+qt_ui_tools = "0.5.0"
