@@ -1,7 +1,5 @@
-use qt_widgets::QApplication;
+// use qt_widgets::QApplication;
 
 fn main() {
-    QApplication::init(|_| unsafe {
-        QApplication::exec()
-    })
+    println!("Hello world");
 }
