@@ -1,0 +1,29 @@
+//
+// Created by rubytox on 03/02/2021.
+//
+
+#ifndef PEOPLE_LOG_RELATIVES_
+#define PEOPLE_LOG_RELATIVES_
+
+enum FriendsLevel {
+    VERY_CLOSE,
+    CLOSE,
+    ACQUAINTANCE,
+    NB_FRIENDSLEVEL
+};
+
+enum FamilyRelationship {
+    FATHER,
+    MOTHER,
+    BROTHER,
+    SISTER,
+    F_GRANDFATHER,
+    F_GRANDMOTHER,
+    M_GRANDFATHER,
+    M_GRANDMOTHER,
+    UNCLE,
+    AUNT
+};
+
+
+#endif //PEOPLE_LOG_RELATIVES_

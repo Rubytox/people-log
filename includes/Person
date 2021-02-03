@@ -1,0 +1,70 @@
+//
+// Created by rubytox on 02/02/2021.
+//
+
+#ifndef PEOPLE_LOG_PERSON_
+#define PEOPLE_LOG_PERSON_
+
+#include <string>
+#include <vector>
+#include <map>
+
+#include <SocialNetworks>
+#include <Relatives>
+#include <EducationElement>
+#include <Anecdote>
+
+class WeakPerson {
+protected:
+    std::string _firstName;
+    std::string _lastName;
+public:
+    WeakPerson();
+    WeakPerson(std::string firstName, std::string lastName);
+};
+
+/**
+ * A person has the following characteristics:
+ * - first and last name
+ * - date of birth
+ * - place of birth
+ * - picture
+ * They then have:
+ * - pictures
+ * - social networks
+ * - friends <with levels (enum)>
+ * - family members
+ * - educational background: diplomas, schools... <class for that>
+ * - extracurricular activites
+ * - comments, misc things: array of anecdotes <class for that>
+ */
+class Person : WeakPerson {
+private:
+    std::string _dateOfBirth;
+    std::string _placeOfBirth;
+
+    std::string _picture;
+
+    std::vector<std::string> _pictures;
+    std::map<SocialNetwork, std::vector<std::string>> _socialNetworks;
+    std::map<FriendsLevel, std::vector<WeakPerson>> _friends;
+    std::map<FamilyRelationship, std::vector<WeakPerson>> _family;
+
+    std::vector<EducationElement> _education;
+    std::vector<std::string> _extracurricular;
+
+    std::vector<Anecdote> _comments;
+public:
+    Person(std::string firstName, std::string lastName, std::string dateOfBirth,
+           std::string placeOfBirth, std::string picture);
+
+    void addPicture(const std::string &picture);
+    void addPicture(const std::vector<std::string> &pictures);
+    void addSocialNetwork(const SocialNetwork &socialNetwork, const std::string &id);
+
+    void display();
+};
+
+
+
+#endif //PEOPLE_LOG_PERSON_

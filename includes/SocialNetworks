@@ -1,0 +1,16 @@
+//
+// Created by rubytox on 03/02/2021.
+//
+
+#ifndef PEOPLE_LOG_SOCIALNETWORKS_
+#define PEOPLE_LOG_SOCIALNETWORKS_
+
+enum SocialNetwork {
+    FACEBOOK,
+    INSTAGRAM,
+    TWITTER,
+    REDDIT,
+    NB_NETWORKS
+};
+
+#endif //PEOPLE_LOG_SOCIALNETWORKS_

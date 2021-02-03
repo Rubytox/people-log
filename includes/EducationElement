@@ -1,0 +1,48 @@
+//
+// Created by rubytox on 03/02/2021.
+//
+
+#ifndef PEOPLE_LOG_EDUCATIONELEMENT_
+#define PEOPLE_LOG_EDUCATIONELEMENT_
+
+#include <iostream>
+#include <string>
+
+enum StudyLevel {
+    BREVET,
+    BAC,
+    L1,
+    L2,
+    L3,
+    M1,
+    M2,
+    CPGE,
+    INGENIEUR,
+    DOCTORAT
+};
+
+class EducationElement {
+protected:
+    std::string _title;
+    std::string _place;
+    std::string _comments;
+    StudyLevel _level;
+public:
+};
+
+
+class Diploma : EducationElement {
+private:
+    std::string _date;
+public:
+};
+
+class Formation : EducationElement {
+private:
+    std::string _from;
+    std::string _to;
+public:
+};
+
+
+#endif //PEOPLE_LOG_EDUCATIONELEMENT_

@@ -1,0 +1,19 @@
+//
+// Created by rubytox on 03/02/2021.
+//
+
+#ifndef PEOPLE_LOG_ANECDOTE_
+#define PEOPLE_LOG_ANECDOTE_
+
+#include <string>
+
+class Anecdote {
+private:
+    std::string _date;
+    std::string _content;
+    std::string _comment;
+public:
+};
+
+
+#endif //PEOPLE_LOG_ANECDOTE_
